@@ -1,11 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import {
-  categoryLabels,
-  scales,
-  type ScaleCategory,
-} from "@/lib/scales";
+import { categoryLabels, isScaleReady, type ScaleCategory, type ScaleDefinition } from "@/lib/scales";
 import { ScaleCard } from "@/components/scale-card";
 
 type FilterCategory = ScaleCategory | "todas";
@@ -18,7 +14,11 @@ const categories: FilterCategory[] = [
   "anestesia",
 ];
 
-export function ScaleSearch() {
+interface ScaleSearchProps {
+  scales: ScaleDefinition[];
+}
+
+export function ScaleSearch({ scales }: ScaleSearchProps) {
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<FilterCategory>("todas");
 
@@ -42,7 +42,7 @@ export function ScaleSearch() {
 
       return matchesCategory && searchable.includes(normalizedQuery);
     });
-  }, [query, activeCategory]);
+  }, [query, activeCategory, scales]);
 
   return (
     <div>

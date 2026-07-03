@@ -1,6 +1,11 @@
 import { ScaleSearch } from "@/components/scale-search";
+import { isScaleReady } from "@/lib/scales";
+import { getAllScales } from "@/lib/scales/loader";
 
 export default function Home() {
+  const scales = getAllScales();
+  const readyCount = scales.filter(isScaleReady).length;
+
   return (
     <div className="min-h-full bg-slate-50">
       <header className="border-b border-slate-200/80 bg-white">
@@ -19,7 +24,7 @@ export default function Home() {
             </div>
           </div>
           <span className="hidden rounded-full bg-teal-50 px-3 py-1 text-xs font-medium text-teal-700 sm:inline">
-            4 escalas disponibles
+            {scales.length} escalas · {readyCount} disponibles
           </span>
         </div>
       </header>
@@ -35,7 +40,7 @@ export default function Home() {
           </p>
         </section>
 
-        <ScaleSearch />
+        <ScaleSearch scales={scales} />
       </main>
 
       <footer className="border-t border-slate-200/80 bg-white">

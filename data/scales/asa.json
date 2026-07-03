@@ -1,0 +1,30 @@
+{
+  "id": "asa",
+  "name": "ASA",
+  "fullName": "American Society of Anesthesiologists Physical Status",
+  "description": "Clasifica el riesgo anestésico preoperatorio según el estado físico del paciente.",
+  "category": "preoperatorio",
+  "duration": "<1 min",
+  "questions": [
+        {
+          "id": "asa_class",
+          "text": "Seleccione la clasificación ASA del paciente",
+          "options": [
+            { "id": "asa1", "label": "ASA I - Paciente sano", "score": 1 },
+            { "id": "asa2", "label": "ASA II - Enfermedad sistémica leve", "score": 2 },
+            { "id": "asa3", "label": "ASA III - Enfermedad sistémica grave", "score": 3 },
+            { "id": "asa4", "label": "ASA IV - Enfermedad sistémica grave con amenaza constante para la vida", "score": 4 },
+            { "id": "asa5", "label": "ASA V - Paciente moribundo", "score": 5 },
+            { "id": "asa6", "label": "ASA VI - Donante con muerte cerebral", "score": 6 }
+          ]
+        }
+      ],
+      "interpretation": [
+        { "min": 1, "max": 1, "label": "ASA I", "description": "Paciente sano.", "severity": "low" },
+        { "min": 2, "max": 2, "label": "ASA II", "description": "Enfermedad sistémica leve.", "severity": "low" },
+        { "min": 3, "max": 3, "label": "ASA III", "description": "Enfermedad sistémica grave.", "severity": "moderate" },
+        { "min": 4, "max": 4, "label": "ASA IV", "description": "Enfermedad sistémica grave con amenaza constante para la vida.", "severity": "high" },
+        { "min": 5, "max": 5, "label": "ASA V", "description": "Paciente moribundo.", "severity": "critical" },
+        { "min": 6, "max": 6, "label": "ASA VI", "description": "Donante con muerte cerebral.", "severity": "critical" }
+      ]
+    }

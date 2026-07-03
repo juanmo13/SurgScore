@@ -1,0 +1,50 @@
+{
+  "id": "hinchey",
+  "name": "Hinchey",
+  "fullName": "Clasificación de Hinchey",
+  "description": "Clasificación de la diverticulitis aguda complicada.",
+  "category": "diagnostico",
+  "duration": "<1 min",
+  "questions": [
+    {
+      "id": "hinchey_stage",
+      "text": "Seleccione el estadio de Hinchey",
+      "options": [
+        { "id": "i", "label": "I - Absceso pericólico o flemón", "score": 1 },
+        { "id": "ii", "label": "II - Absceso pélvico, intraabdominal o retroperitoneal", "score": 2 },
+        { "id": "iii", "label": "III - Peritonitis purulenta generalizada", "score": 3 },
+        { "id": "iv", "label": "IV - Peritonitis fecaloidea generalizada", "score": 4 }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 1,
+      "max": 1,
+      "label": "Hinchey I",
+      "description": "Generalmente manejo conservador con antibióticos ± drenaje percutáneo.",
+      "severity": "low"
+    },
+    {
+      "min": 2,
+      "max": 2,
+      "label": "Hinchey II",
+      "description": "Drenaje percutáneo cuando sea posible y valoración quirúrgica.",
+      "severity": "moderate"
+    },
+    {
+      "min": 3,
+      "max": 3,
+      "label": "Hinchey III",
+      "description": "Peritonitis purulenta generalizada. Habitualmente requiere cirugía urgente.",
+      "severity": "high"
+    },
+    {
+      "min": 4,
+      "max": 4,
+      "label": "Hinchey IV",
+      "description": "Peritonitis fecaloidea generalizada. Requiere cirugía urgente.",
+      "severity": "critical"
+    }
+  ]
+}

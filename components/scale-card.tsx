@@ -1,9 +1,8 @@
 import Link from "next/link";
-import type { Scale } from "@/lib/scales";
-import { categoryLabels } from "@/lib/scales";
+import { categoryLabels, isScaleReady, type ScaleDefinition } from "@/lib/scales";
 
 const categoryColors: Record<
-  Scale["category"],
+  ScaleDefinition["category"],
   { bg: string; text: string; dot: string }
 > = {
   preoperatorio: {
@@ -29,7 +28,7 @@ const categoryColors: Record<
 };
 
 interface ScaleCardProps {
-  scale: Scale;
+  scale: ScaleDefinition;
 }
 
 export function ScaleCard({ scale }: ScaleCardProps) {
@@ -65,7 +64,11 @@ export function ScaleCard({ scale }: ScaleCardProps) {
       </p>
 
       <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-4 text-xs text-slate-400">
-        <span>{scale.items} criterios</span>
+        <span>
+          {isScaleReady(scale)
+            ? `${scale.questions.length} criterios`
+            : "Próximamente"}
+        </span>
         <span>{scale.duration}</span>
       </div>
     </Link>
