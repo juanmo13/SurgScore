@@ -7,6 +7,8 @@ const {
   searchScales,
 } = require("./src/scales");
 
+console.log("BOT_TOKEN:", process.env.BOT_TOKEN);
+
 const bot = new Telegraf(process.env.BOT_TOKEN);
 const sessions = {};
 function sendQuestion(ctx, scale, index) {
