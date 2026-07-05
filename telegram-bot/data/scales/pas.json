@@ -1,6 +1,6 @@
 {
   "id": "pas",
-  "name": "pas",
+  "name": "PAS",
   "fullName": "Pediatric Appendicitis Score",
   "description": "conocida como escala de Samuel, evalua el riesgo de apendicitis aguda en niños (4-15 años) que presentan dolor abdominal",
   "category": "apendicitis",
@@ -8,7 +8,7 @@
   "questions": [
     {
       "id": "migracion de dolor",
-      "text": "migracion de dolor",
+      "text": "Migración del dolor hacia la fosa ilíaca derecha (FID)",
       "options": [
         { "id": "yes", "label": "Sí", "score": 1 },
         { "id": "no", "label": "No", "score": 0 }
@@ -16,7 +16,7 @@
     },
     {
       "id": "anorexia",
-      "text": "anorexia",
+      "text": "Anorexia (pérdida de apetito)",
       "options": [
         { "id": "yes", "label": "Sí", "score": 1 },
         { "id": "no", "label": "No", "score": 0 }
@@ -24,7 +24,7 @@
     },
     {
       "id": "nausea o vomito",
-      "text": "nausea o vomito",
+      "text": "Náuseas o vómitos",
       "options": [
         { "id": "yes", "label": "Sí", "score": 1 },
         { "id": "no", "label": "No", "score": 0 }
@@ -32,7 +32,7 @@
     },
     {
       "id": "Dolor palpación de QID",
-      "text": "Dolor palpación de QID",
+      "text": "Sensibilidad / dolor a la palpación en la FID",
       "options": [
         { "id": "yes", "label": "Sí", "score": 2 },
         { "id": "no", "label": "No", "score": 0 }
@@ -40,15 +40,15 @@
     },
     {
       "id": "Dolor QID al toser-saltar-percutir.",
-      "text": "Dolor QID al toser-saltar-percutir.",
+      "text": "Dolor con la tos, percusión o saltos en la FID",
       "options": [
         { "id": "yes", "label": "Sí", "score": 2 },
         { "id": "no", "label": "No", "score": 0 }
       ]
     },
     {
-      "id": "Elevación de temperatura >37.3",
-      "text": "Elevación de temperatura >37.3",
+      "id": "Elevación de temperatura",
+      "text": "Fiebre (Temperatura ≥ 38.0 ºC)",
       "options": [
         { "id": "yes", "label": "Sí", "score": 1 },
         { "id": "no", "label": "No", "score": 0 }
@@ -56,18 +56,18 @@
     },
     {
       "id": "leucocitosis",
-      "text": "leucocitosis",
+      "text": "Leucocitosis (Glóbulos blancos > 10,000/mm³)",
       "options": [
-        { "id": "yes", "label": "Leucocitosis mayor 10.000", "score": 1 },
-        { "id": "no", "label": "Leucocitosis menor 10.000", "score": 0 }
+        { "id": "yes", "label": "si", "score": 1 },
+        { "id": "no", "label": "no", "score": 0 }
       ]
     },
     {
       "id": "neutrofilia",
-      "text": "neutrofilia",
+      "text": "Neutrofilia (Recuento absoluto de neutrófilos > 7,500/mm³)",
       "options": [
-        { "id": "yes", "label": "mayor 75%", "score": 1 },
-        { "id": "no", "label": " menor 75%", "score": 0 }
+        { "id": "yes", "label": "si", "score": 1 },
+        { "id": "no", "label": "no", "score": 0 }
       ]
     }
   ],

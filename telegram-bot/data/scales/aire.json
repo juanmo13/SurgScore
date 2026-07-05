@@ -1,6 +1,6 @@
 {
   "id": "aire",
-  "name": "aire",
+  "name": "Aire",
   "fullName": "Appendicitis Inflammatory Response Score",
   "description": "Evalúa la probabilidad de apendicitis aguda mediante signos clínicos y laboratorio.",
   "category": "apendicitis",
