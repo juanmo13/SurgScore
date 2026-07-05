@@ -1,0 +1,97 @@
+{
+  "id": "pas",
+  "name": "pas",
+  "fullName": "Pediatric Appendicitis Score",
+  "description": "conocida como escala de Samuel, evalua el riesgo de apendicitis aguda en niños (4-15 años) que presentan dolor abdominal",
+  "category": "apendicitis",
+  "duration": "~2 min",
+  "questions": [
+    {
+      "id": "migracion de dolor",
+      "text": "migracion de dolor",
+      "options": [
+        { "id": "yes", "label": "Sí", "score": 1 },
+        { "id": "no", "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "anorexia",
+      "text": "anorexia",
+      "options": [
+        { "id": "yes", "label": "Sí", "score": 1 },
+        { "id": "no", "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "nausea o vomito",
+      "text": "nausea o vomito",
+      "options": [
+        { "id": "yes", "label": "Sí", "score": 1 },
+        { "id": "no", "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "Dolor palpación de QID",
+      "text": "Dolor palpación de QID",
+      "options": [
+        { "id": "yes", "label": "Sí", "score": 2 },
+        { "id": "no", "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "Dolor QID al toser-saltar-percutir.",
+      "text": "Dolor QID al toser-saltar-percutir.",
+      "options": [
+        { "id": "yes", "label": "Sí", "score": 2 },
+        { "id": "no", "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "Elevación de temperatura >37.3",
+      "text": "Elevación de temperatura >37.3",
+      "options": [
+        { "id": "yes", "label": "Sí", "score": 1 },
+        { "id": "no", "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "leucocitosis",
+      "text": "leucocitosis",
+      "options": [
+        { "id": "yes", "label": "Leucocitosis mayor 10.000", "score": 1 },
+        { "id": "no", "label": "Leucocitosis menor 10.000", "score": 0 }
+      ]
+    },
+    {
+      "id": "neutrofilia",
+      "text": "neutrofilia",
+      "options": [
+        { "id": "yes", "label": "mayor 75%", "score": 1 },
+        { "id": "no", "label": " menor 75%", "score": 0 }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 0,
+      "max": 3,
+      "label": "Baja probabilidad",
+      "description": "Apendicitis poco probable. Manejo ambulatorio (alta si el estado general es óptimo) y seguimiento médico domiciliario.",
+      "severity": "low"
+    },
+    {
+      "min": 4,
+      "max": 7,
+      "label": "Probabilidad moderada",
+      "description": "Apendicitis posible. Observación activa en urgencias. Se recomiendan estudios de imagen como ecografía.",
+      "severity": "moderate"
+    },
+    {
+      "min": 8,
+      "max": 10,
+      "label": "Alta probabilidad",
+      "description": "Apendicitis probable. Alta sospecha diagnóstica que justifica la intervención directa.",
+      "severity": "critical"
+    }
+  ]
+}
