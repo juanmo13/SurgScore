@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const SCALES_DIR = path.join(__dirname, "../../data/scales");
+const SCALES_DIR = path.join(__dirname, "../data/scales");
 
 function getScales() {
   const files = fs
