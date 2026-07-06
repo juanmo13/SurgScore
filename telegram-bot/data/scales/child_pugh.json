@@ -1,0 +1,76 @@
+{
+  "id": "child_pugh",
+  "name": "Child-Pugh",
+  "fullName": "Child-Turcotte-Pugh Score",
+  "description": "Evalúa la gravedad y el pronóstico de la cirrosis hepática.",
+  "reference": "Pugh RNH, Murray-Lyon IM, Dawson JL, Pietroni MC, Williams R. Transection of the oesophagus for bleeding oesophageal varices. Br J Surg. 1973.",
+  "category": "higado",
+  "duration": "~2 min",
+  "questions": [
+    {
+      "id": "encephalopathy",
+      "text": "Encefalopatía hepática",
+      "options": [
+        { "label": "Ausente", "score": 1 },
+        { "label": "Grado I-II", "score": 2 },
+        { "label": "Grado III-IV", "score": 3 }
+      ]
+    },
+    {
+      "id": "ascites",
+      "text": "Ascitis",
+      "options": [
+        { "label": "Ausente", "score": 1 },
+        { "label": "Leve / Controlada con diuréticos", "score": 2 },
+        { "label": "Moderada o severa / Refractaria", "score": 3 }
+      ]
+    },
+    {
+      "id": "bilirubin",
+      "text": "Bilirrubina total (mg/dL)",
+      "options": [
+        { "label": "< 2", "score": 1 },
+        { "label": "2 - 3", "score": 2 },
+        { "label": "> 3", "score": 3 }
+      ]
+    },
+    {
+      "id": "albumin",
+      "text": "Albúmina sérica (g/dL)",
+      "options": [
+        { "label": "> 3.5", "score": 1 },
+        { "label": "2.8 - 3.5", "score": 2 },
+        { "label": "< 2.8", "score": 3 }
+      ]
+    },
+    {
+      "id": "inr",
+      "text": "INR",
+      "options": [
+        { "label": "< 1.7", "score": 1 },
+        { "label": "1.7 - 2.3", "score": 2 },
+        { "label": "> 2.3", "score": 3 }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 5,
+      "max": 6,
+      "label": "Clase A",
+      "description": "Cirrosis compensada. Mejor pronóstico. Mortalidad perioperatoria y riesgo de descompensación bajos."
+    },
+    {
+      "min": 7,
+      "max": 9,
+      "label": "Clase B",
+      "description": "Disfunción hepática moderada. Riesgo perioperatorio y de complicaciones significativamente mayor."
+    },
+    {
+      "min": 10,
+      "max": 15,
+      "label": "Clase C",
+      "description": "Cirrosis descompensada. Muy alto riesgo de mortalidad y complicaciones. Debe considerarse evaluación para trasplante hepático cuando esté indicado."
+    }
+  ]
+}

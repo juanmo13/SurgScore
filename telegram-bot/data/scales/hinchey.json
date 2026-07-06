@@ -3,7 +3,7 @@
   "name": "Hinchey",
   "fullName": "Clasificación de Hinchey",
   "description": "Clasificación de la diverticulitis aguda complicada.",
-  "category": "diagnostico",
+  "category": "colon_diverticulitis",
   "duration": "<1 min",
   "questions": [
     {

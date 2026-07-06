@@ -3,7 +3,7 @@
   "name": "Caprini",
   "fullName": "Escala de Caprini",
   "description": "Estima el riesgo de tromboembolismo venoso en pacientes quirúrgicos para guiar la profilaxis.",
-  "category": "preoperatorio",
+  "category": "riesgo_preoperatorio:",
   "duration": "~3 min",
   "questions": [],
   "interpretation": []

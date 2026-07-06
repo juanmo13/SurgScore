@@ -1,0 +1,111 @@
+{
+  "id": "tokyo18",
+  "name": "Tokyo",
+  "fullName": "Tokyo Guidelines 2018 - Gravedad de la colecistitis aguda",
+  "description": "Clasifica la gravedad de la colecistitis aguda según las Tokyo Guidelines 2018.",
+  "reference": "Yokoe M, Hata J, Takada T, et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis. J Hepatobiliary Pancreat Sci. 2018.",
+  "category": "vesicula",
+  "duration": "~2 min",
+  "questions": [
+    {
+      "id": "cardiovascular",
+      "text": "¿Hipotensión que requiere vasopresores?",
+      "options": [
+        { "label": "Sí", "score": 100 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "neurologic",
+      "text": "¿Disminución del nivel de conciencia?",
+      "options": [
+        { "label": "Sí", "score": 100 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "respiratory",
+      "text": "¿PaO₂/FiO₂ <300?",
+      "options": [
+        { "label": "Sí", "score": 100 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "renal",
+      "text": "¿Creatinina >2 mg/dL u oliguria?",
+      "options": [
+        { "label": "Sí", "score": 100 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "hepatic",
+      "text": "¿INR >1.5?",
+      "options": [
+        { "label": "Sí", "score": 100 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "hematologic",
+      "text": "¿Plaquetas <100 000/mm³?",
+      "options": [
+        { "label": "Sí", "score": 100 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "wbc",
+      "text": "¿Leucocitos >18 000/mm³?",
+      "options": [
+        { "label": "Sí", "score": 10 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "mass",
+      "text": "¿Masa palpable dolorosa en hipocondrio derecho?",
+      "options": [
+        { "label": "Sí", "score": 10 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "duration",
+      "text": "¿Síntomas por más de 72 horas?",
+      "options": [
+        { "label": "Sí", "score": 10 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "local",
+      "text": "¿Inflamación local marcada (gangrena, absceso, enfisematosa, peritonitis biliar)?",
+      "options": [
+        { "label": "Sí", "score": 10 },
+        { "label": "No", "score": 0 }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 100,
+      "max": 1000,
+      "label": "Grado III (Severa)",
+      "description": "Existe disfunción de al menos un órgano. Requiere manejo intensivo."
+    },
+    {
+      "min": 10,
+      "max": 99,
+      "label": "Grado II (Moderada)",
+      "description": "Existe al menos un criterio de gravedad local o sistémica."
+    },
+    {
+      "min": 0,
+      "max": 9,
+      "label": "Grado I (Leve)",
+      "description": "No cumple criterios de Grado II ni Grado III."
+    }
+  ]
+}

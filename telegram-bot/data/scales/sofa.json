@@ -3,7 +3,7 @@
   "name": "SOFA",
   "fullName": "Sequential Organ Failure Assessment",
   "description": "Cuantifica la disfunción orgánica en pacientes críticos y monitoriza la evolución de la sepsis.",
-  "category": "criticidad",
+  "category": "uci",
   "duration": "~5 min",
   "questions": [],
   "interpretation": []
