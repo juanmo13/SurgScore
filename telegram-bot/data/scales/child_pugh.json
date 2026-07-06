@@ -11,45 +11,45 @@
       "id": "encephalopathy",
       "text": "Encefalopatía hepática",
       "options": [
-        { "label": "Ausente", "score": 1 },
-        { "label": "Grado I-II", "score": 2 },
-        { "label": "Grado III-IV", "score": 3 }
+        { "id": "one", "label": "Ausente", "score": 1 },
+        { "id": "two", "label": "Grado I-II", "score": 2 },
+        { "id": "three", "label": "Grado III-IV", "score": 3 }
       ]
     },
     {
       "id": "ascites",
       "text": "Ascitis",
       "options": [
-        { "label": "Ausente", "score": 1 },
-        { "label": "Leve / Controlada con diuréticos", "score": 2 },
-        { "label": "Moderada o severa / Refractaria", "score": 3 }
+        { "id": "one", "label": "Ausente", "score": 1 },
+        { "id": "two", "label": "Leve / Controlada con diuréticos", "score": 2 },
+        { "id": "three", "label": "Moderada o severa / Refractaria", "score": 3 }
       ]
     },
     {
       "id": "bilirubin",
       "text": "Bilirrubina total (mg/dL)",
       "options": [
-        { "label": "< 2", "score": 1 },
-        { "label": "2 - 3", "score": 2 },
-        { "label": "> 3", "score": 3 }
+        { "id": "one", "label": "< 2", "score": 1 },
+        { "id": "two", "label": "2 - 3", "score": 2 },
+        { "id": "three", "label": "> 3", "score": 3 }
       ]
     },
     {
       "id": "albumin",
       "text": "Albúmina sérica (g/dL)",
       "options": [
-        { "label": "> 3.5", "score": 1 },
-        { "label": "2.8 - 3.5", "score": 2 },
-        { "label": "< 2.8", "score": 3 }
+        { "id": "one", "label": "> 3.5", "score": 1 },
+        { "id": "two", "label": "2.8 - 3.5", "score": 2 },
+        { "id": "three", "label": "< 2.8", "score": 3 }
       ]
     },
     {
       "id": "inr",
       "text": "INR",
       "options": [
-        { "label": "< 1.7", "score": 1 },
-        { "label": "1.7 - 2.3", "score": 2 },
-        { "label": "> 2.3", "score": 3 }
+        { "id": "one", "label": "< 1.7", "score": 1 },
+        { "id": "two", "label": "1.7 - 2.3", "score": 2 },
+        { "id": "three", "label": "> 2.3", "score": 3 }
       ]
     }
   ],
