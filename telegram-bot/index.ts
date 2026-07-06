@@ -36,13 +36,20 @@ function sendQuestion(ctx, scale, index) {
 }
 // /start
 const CATEGORY_EMOJIS = {
-  diagnostico: "🔍",
-  preoperatorio: "🔪",
-  trauma: "🚑",
+  apendicitis: "🟡",
+  vesicula_biliar: "🟢",
+  pancreas: "🟠",
+  higado: "🟤",
+  colon_diverticulitis: "🔵",
+  hernias: "🟣",
+  trauma: "🔴",
   uci: "🏥",
-  cardiovascular: "❤️",
-  respiratorio: "🔬",
-  apendicitis: "🩺",
+  sepsis: "⚫",
+  riesgo_preoperatorio: "🫀",
+  hemorragia_transfusion: "🩸",
+  torax: "🫁",
+  endoscopia: "⚪",
+  cirugia_pediatrica: "👶",
 };
 bot.start((ctx) => {
   const categories = getCategories();

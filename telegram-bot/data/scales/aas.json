@@ -1,0 +1,121 @@
+{
+  "id": "aas",
+  "name": "AAS",
+  "fullName": "Adult Appendicitis Score",
+  "description": "Estima la probabilidad de apendicitis aguda en pacientes adultos.",
+  "reference": "Sammalkorpi HE, Mentula P, Leppäniemi A. Adult Appendicitis Score. Br J Surg. 2014.",
+  "category": "apendicitis",
+  "duration": "~2 min",
+  "questions": [
+    {
+      "id": "pain_rlq",
+      "text": "Dolor en fosa ilíaca derecha",
+      "options": [
+        { "label": "Sí", "score": 2 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "migration",
+      "text": "Migración del dolor hacia la fosa ilíaca derecha",
+      "options": [
+        { "label": "Sí", "score": 2 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "guarding",
+      "text": "Defensa muscular",
+      "options": [
+        { "label": "Ninguna", "score": 0 },
+        { "label": "Leve", "score": 2 },
+        { "label": "Moderada", "score": 3 },
+        { "label": "Severa", "score": 4 }
+      ]
+    },
+    {
+      "id": "cough",
+      "text": "Dolor al toser, percutir o saltar",
+      "options": [
+        { "label": "Sí", "score": 2 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "temperature",
+      "text": "Temperatura ≥ 38.5 °C",
+      "options": [
+        { "label": "Sí", "score": 1 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "vomiting",
+      "text": "Náuseas o vómitos",
+      "options": [
+        { "label": "Sí", "score": 1 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "age",
+      "type": "number",
+      "label": "Edad (años)",
+      "ranges": [
+        { "min": 0, "max": 39, "score": 1 },
+        { "min": 40, "max": 120, "score": 0 }
+      ]
+    },
+    {
+      "id": "wbc",
+      "text": "Leucocitos (x10⁹/L)",
+      "options": [
+        { "label": "< 7", "score": 0 },
+        { "label": "7 - 10.9", "score": 1 },
+        { "label": "11 - 14.9", "score": 2 },
+        { "label": "15 - 18", "score": 3 },
+        { "label": "> 18", "score": 4 }
+      ]
+    },
+    {
+      "id": "neutrophils",
+      "text": "Neutrófilos (%)",
+      "options": [
+        { "label": "< 75%", "score": 0 },
+        { "label": "75 - 84%", "score": 1 },
+        { "label": "85 - 89%", "score": 2 },
+        { "label": "≥ 90%", "score": 3 }
+      ]
+    },
+    {
+      "id": "crp",
+      "text": "Proteína C Reactiva (PCR)",
+      "options": [
+        { "label": "< 10 mg/L", "score": 0 },
+        { "label": "10 - 49 mg/L", "score": 1 },
+        { "label": "50 - 99 mg/L", "score": 2 },
+        { "label": "≥ 100 mg/L", "score": 3 }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 0,
+      "max": 10,
+      "label": "Baja probabilidad",
+      "description": "La apendicitis es poco probable. Considere observación o diagnósticos alternativos."
+    },
+    {
+      "min": 11,
+      "max": 15,
+      "label": "Probabilidad intermedia",
+      "description": "Se recomienda realizar estudios de imagen (ecografía o tomografía) según disponibilidad y contexto clínico."
+    },
+    {
+      "min": 16,
+      "max": 25,
+      "label": "Alta probabilidad",
+      "description": "Alta probabilidad de apendicitis aguda. Se recomienda valoración quirúrgica."
+    }
+  ]
+}

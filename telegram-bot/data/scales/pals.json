@@ -3,11 +3,11 @@
   "name": "PALabS",
   "fullName": "Pediatric Appendicitis Lab Score",
   "description": "escala clínica y analítica diseñada para identificar a niños con muy bajo riesgo de apendicitis aguda",
-  "category": "apendicitis",
+  "category": "cirugia_pediatrica",
   "duration": "~2 min",
   "questions": [
     {
-      "id": "recuento de neutrofilos",
+      "id": "neutrophils",
       "text": "Recuento Absoluto de Neutrófilos (ANC) ≥ 7,500/µL:",
       "options": [
         { "id": "yes", "label": "Sí", "score": 7 },
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "id": "dolor",
+      "id": "pain",
       "text": "Dolor localizado en el cuadrante inferior derecho:",
       "options": [
         { "id": "yes", "label": "Sí", "score": 4 },
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "id": "leucocitosis",
+      "id": "wbc",
       "text": "Recuento de Glóbulos Blancos (WBC) ≥ 10,000/µL:",
       "options": [
         { "id": "yes", "label": "Sí", "score": 4 },
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "id": "Náuseas",
+      "id": "vomiting",
       "text": "Náuseas:",
       "options": [
         { "id": "yes", "label": "Sí", "score": 3 },
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "id": "calprotectina.",
+      "id": "calprotectina",
       "text": "Calprotectina (CP) ≥ 0.5 ng/mL: ",
       "options": [
         { "id": "yes", "label": "Sí", "score": 3 },
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "id": "proteina c reactiva",
+      "id": "crp",
       "text": "Proteína C Reactiva (PCR) ≥ 10 mg/L",
       "options": [
         { "id": "yes", "label": "si", "score": 2 },
@@ -67,7 +67,7 @@
       "min": 7,
       "max": 18,
       "label": "Probabilidad moderada",
-      "description": "Riesdo de apendicitis intermedio. Se requiere evaluación adicional mediante ecografía abdominal.",
+      "description": "Riesgo de apendicitis intermedio. Se requiere evaluación adicional mediante ecografía abdominal.",
       "severity": "moderate"
     },
     {
