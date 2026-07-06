@@ -8,18 +8,18 @@
   "duration": "~2 min",
   "questions": [
     {
-      "id": "age",
-      "text": "Edad >55 años",
+      "id": "wbc",
+      "text": "Leucocitos >15 000/mm³",
       "options": [
-        { "label": "Sí", "score": 1 },
+        { "label": "Si", "score": 1 },
         { "label": "No", "score": 0 }
       ]
     },
     {
-      "id": "wbc",
-      "text": "Leucocitos >15 000/mm³",
+      "id": "age",
+      "text": "Edad >55 años",
       "options": [
-        { "label": "Sí", "score": 1 },
+        { "label": "Si", "score": 1 },
         { "label": "No", "score": 0 }
       ]
     },
@@ -27,7 +27,7 @@
       "id": "glucose",
       "text": "Glucosa >180 mg/dL (10 mmol/L) (sin diabetes conocida)",
       "options": [
-        { "label": "Sí", "score": 1 },
+        { "label": "Si", "score": 1 },
         { "label": "No", "score": 0 }
       ]
     },
@@ -35,7 +35,7 @@
       "id": "urea",
       "text": "BUN >44.8 mg/dL (Urea >16 mmol/L)",
       "options": [
-        { "label": "Sí", "score": 1 },
+        { "label": "Si", "score": 1 },
         { "label": "No", "score": 0 }
       ]
     },
@@ -43,7 +43,7 @@
       "id": "pao2",
       "text": "PaO₂ <60 mmHg (8 kPa)",
       "options": [
-        { "label": "Sí", "score": 1 },
+        { "label": "Si", "score": 1 },
         { "label": "No", "score": 0 }
       ]
     },
@@ -51,7 +51,7 @@
       "id": "calcium",
       "text": "Calcio sérico <2 mmol/L (8 mg/dL)",
       "options": [
-        { "label": "Sí", "score": 1 },
+        { "label": "Si", "score": 1 },
         { "label": "No", "score": 0 }
       ]
     },
@@ -59,7 +59,7 @@
       "id": "albumin",
       "text": "Albúmina <3.2 g/dL (32 g/L)",
       "options": [
-        { "label": "Sí", "score": 1 },
+        { "label": "Si", "score": 1 },
         { "label": "No", "score": 0 }
       ]
     },
@@ -67,7 +67,7 @@
       "id": "ldh",
       "text": "LDH >600 UI/L",
       "options": [
-        { "label": "Sí", "score": 1 },
+        { "label": "Si", "score": 1 },
         { "label": "No", "score": 0 }
       ]
     }
