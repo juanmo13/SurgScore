@@ -4,7 +4,7 @@
   "fullName": "Tokyo Guidelines 2018 - Gravedad de la colecistitis aguda",
   "description": "Clasifica la gravedad de la colecistitis aguda según las Tokyo Guidelines 2018.",
   "reference": "Yokoe M, Hata J, Takada T, et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis. J Hepatobiliary Pancreat Sci. 2018.",
-  "category": "vesicula",
+  "category": "vesicula_biliar",
   "duration": "~2 min",
   "questions": [
     {
