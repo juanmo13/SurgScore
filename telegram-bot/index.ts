@@ -18,7 +18,7 @@ function sendQuestion(ctx, scale, index) {
     sessions[ctx.from.id].currentQuestion = index;
 
     return ctx.reply(
-      `Pregunta ${index + 1}/${scale.questions.length}\n\n${question.label || question.text}\n\n✍️ Escribe un número:`
+      `🏥 ${scale.fullName || scale.name}\n\n📍 Pregunta ${index + 1}/${scale.questions.length}\n\n${question.label || question.text}\n\n✍️ Escribe un número:`
     );
   }
 
@@ -30,7 +30,7 @@ function sendQuestion(ctx, scale, index) {
   ]);
 
   ctx.reply(
-    `Pregunta ${index + 1}/${scale.questions.length}\n\n${question.text}`,
+    `🏥 ${scale.fullName || scale.name}\n\n📍 Pregunta ${index + 1}/${scale.questions.length}\n\n${question.text}`,
     Markup.inlineKeyboard(buttons)
   );
 }

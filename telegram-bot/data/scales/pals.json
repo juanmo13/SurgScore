@@ -60,21 +60,21 @@
       "min": 0,
       "max": 6,
       "label": "Baja probabilidad",
-      "description": "riesgo de apendicitis extremadamente bajo. Esta puntuación ofrece una sensibilidad del 99.2% y un valor predictivo negativo del 97.6%.",
+      "description": "Riesgo de apendicitis extremadamente bajo. Esta puntuación ofrece una sensibilidad del 99.2% y un valor predictivo negativo del 97.6%.",
       "severity": "low"
     },
     {
       "min": 7,
       "max": 18,
       "label": "Probabilidad moderada",
-      "description": "riesdo de apendicitis intermedio. Se requiere evaluación adicional mediante ecografía abdominal.",
+      "description": "Riesdo de apendicitis intermedio. Se requiere evaluación adicional mediante ecografía abdominal.",
       "severity": "moderate"
     },
     {
       "min": 19,
       "max": 23,
       "label": "Alta probabilidad",
-      "description": "riesgo de apendicitis alto. valor predictivo positivo del 86%",
+      "description": "Riesgo de apendicitis alto. valor predictivo positivo del 86%",
       "severity": "critical"
     }
   ]
