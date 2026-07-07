@@ -7,8 +7,6 @@ const {
   searchScales,
 } = require("./src/scales");
 
-console.log("BOT_TOKEN:", process.env.BOT_TOKEN);
-
 const bot = new Telegraf(process.env.BOT_TOKEN);
 const sessions = {};
 function sendQuestion(ctx, scale, index) {
@@ -140,6 +138,14 @@ bot.action(/scale_(.+)/, async (ctx) => {
     waitingNumber: false,
     answers: {},
   };
+  await ctx.reply(
+    `🏥 *${scale.fullName || scale.name}*\n\n` +
+    `📖 ${scale.description}\n\n` +
+    `▶️ Comencemos.`,
+    {
+      parse_mode: "Markdown",
+    }
+  );
   sendQuestion(ctx, scale, 0);
 });
 bot.action(/^answer_([^_]+)_(\d+)_(\d+)$/, async (ctx) => {
@@ -158,7 +164,7 @@ bot.action(/^answer_([^_]+)_(\d+)_(\d+)$/, async (ctx) => {
   const option = question.options.find((o) => o.score === score);
 
   sessions[ctx.from.id].answers[question.id] = {
-    question: question.text,
+    question: question.label || question.text,
     answer: option ? option.label : "",
     score,
   };
