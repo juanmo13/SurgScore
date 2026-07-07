@@ -1,0 +1,48 @@
+{
+  "id": "glasgow",
+  "name": "Glasgow (ECG) ",
+  "fullName": "Escala de Coma de Glasgow (ECG) ",
+  "description": "Evalúa el nivel de consciencia tras un traumatismo craneoencefálico o daño neurológico.",
+  "category": "trauma",
+  "duration": "<1 min",
+  "questions": [
+        {
+          "id": "eye_class",
+          "text": "Seleccione un parametro de Apertura Ocular",
+          "options": [
+            { "id": "eye1", "label": " Sin apertura ocular (I)", "score": 1 },
+            { "id": "eye2", "label": "Ante un estímulo doloroso (II)", "score": 2 },
+            { "id": "eye3", "label": "Ante una orden verbal (III)", "score": 3 },
+            { "id": "eye4", "label": "Espontánea (IV)", "score": 4 }
+          ]
+        },
+        {
+          "id": "ver_class",
+          "text": "Seleccione un parametro de Respuesta Verbal",
+          "options": [
+            { "id": "ver1", "label": " Sin respuesta verbal (I)", "score": 1 },
+            { "id": "ver1", "label": "Sonidos incomprensibles o gemidos (II)", "score": 2 },
+            { "id": "ver1", "label": "Palabras inapropiadas o incoherentes (III)", "score": 3 },
+            { "id": "ver1", "label": "Confuso o desorientado (IV)", "score": 4 },
+            { "id": "ver1", "label": "Orientado y conversando normalmente (V)", "score": 5 }
+          ]
+        },
+        {
+          "id": "mot_class",
+          "text": "Seleccione un parametro de Respuesta motora",
+          "options": [
+            { "id": "mot1", "label": " Sin respuesta motora (I)", "score": 1 },
+            { "id": "mot2", "label": "Extensión anormal - descerebración (II)", "score": 2 },
+            { "id": "mot3", "label": "Flexión anormal - decorticación (III)", "score": 3 },
+            { "id": "mot4", "label": "Retirada o flexión normal ante el dolor (IV)", "score": 4 },
+            { "id": "mot5", "label": "Localiza el dolor - mueve la mano hacia el estímulo (V)", "score": 5 },
+            { "id": "mot6", "label": "Obedece órdenes correctamente (VI)", "score": 6 }
+          ]
+        }
+      ],
+      "interpretation": [
+        { "min": 3, "max": 8, "label": "Lesión grave", "description": "Emergencia médica neurológica extrema con requerimiento de soporte de via aerea", "severity": "critical" },
+        { "min": 9, "max": 12, "label": "Lesión moderada", "description": "Estado intermedio que amerita estudios de imagen urgentes ej. TAC cerebral", "severity": "moderate" },
+        { "min": 13, "max": 15, "label": "Lesión leve", "description": "Paciente estable que requiere observación y evaluación continua.", "severity": "low" }
+      ]
+    }

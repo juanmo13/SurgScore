@@ -1,0 +1,57 @@
+{
+  "id": "sirs",
+  "name": "SIRS",
+  "fullName": "Síndrome de Respuesta Inflamatoria Sistémica (SIRS)",
+  "description": "Herramienta diseñada para identificar respuestas inflamatorias generalizadas que puedan indicar infección grave.",
+  "reference": ".",
+  "category": "sepsis",
+  "duration": "~1 min",
+  "questions": [
+    {
+      "id": "Ttemp",
+      "text": "Temperatura anormal: >38°C o <36°C",
+      "options": [
+        { "label": "Sí", "score": 1 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "fc",
+      "text": "Frecuencia cardíaca: >90 LPM",
+      "options": [
+        { "label": "Sí", "score": 1 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "fr",
+      "text": "Frecuencia respiratoria rápida: >20 RPM o PaCO₂ < 32 mmHg",
+      "options": [
+        { "label": "Sí", "score": 1 },
+        { "label": "No", "score": 0 }
+      ]
+    },
+    {
+      "id": "leuc",
+      "text": "leucocitos: >12.000, <4.000 o >10% de bandas",
+      "options": [
+        { "label": "Sí", "score": 1 },
+        { "label": "No", "score": 0 }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 0,
+      "max": 1,
+      "label": "0-1 puntos",
+      "description": "Un SIRS <2 no excluye infeccion; continúe la evaluación clínica si existe sospecha de infección."
+    },
+    {
+      "min": 2,
+      "max": 4,
+      "label": "SIRS confirmado",
+      "description": "En el contexto de infección o pancreatitis aguda ≥ 2 criterios indican mal pronóstico."
+    }
+  ]
+}
