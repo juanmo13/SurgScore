@@ -21,10 +21,10 @@
           "text": "Seleccione un parametro de Respuesta Verbal",
           "options": [
             { "id": "ver1", "label": " Sin respuesta verbal (I)", "score": 1 },
-            { "id": "ver1", "label": "Sonidos incomprensibles o gemidos (II)", "score": 2 },
-            { "id": "ver1", "label": "Palabras inapropiadas o incoherentes (III)", "score": 3 },
-            { "id": "ver1", "label": "Confuso o desorientado (IV)", "score": 4 },
-            { "id": "ver1", "label": "Orientado y conversando normalmente (V)", "score": 5 }
+            { "id": "ver2", "label": "Sonidos incomprensibles o gemidos (II)", "score": 2 },
+            { "id": "ver3", "label": "Palabras inapropiadas o incoherentes (III)", "score": 3 },
+            { "id": "ver4", "label": "Confuso o desorientado (IV)", "score": 4 },
+            { "id": "ver5", "label": "Orientado y conversando normalmente (V)", "score": 5 }
           ]
         },
         {

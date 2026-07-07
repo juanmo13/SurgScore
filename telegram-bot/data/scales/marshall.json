@@ -1,48 +1,47 @@
 {
-  "id": "glasgow",
-  "name": "Glasgow (ECG) ",
-  "fullName": "Escala de Coma de Glasgow (ECG) ",
-  "description": "Evalúa el nivel de consciencia tras un traumatismo craneoencefálico o daño neurológico.",
-  "category": "trauma",
+  "id": "marshall",
+  "name": "MARSHALL ",
+  "fullName": "escala de Marshall modificada ",
+  "description": "Determinar la presencia y gravedad de FALLA ORGANICA en pancreatitis.",
+  "category": "pancreas",
   "duration": "<1 min",
   "questions": [
         {
-          "id": "eye_class",
-          "text": "Seleccione un parametro de Apertura Ocular",
+          "id": "resp_class",
+          "text": "Sistema Respiratorio (PaO₂/FiO₂ en mmHg)",
           "options": [
-            { "id": "eye1", "label": " Sin apertura ocular (I)", "score": 1 },
-            { "id": "eye2", "label": "Ante un estímulo doloroso (II)", "score": 2 },
-            { "id": "eye3", "label": "Ante una orden verbal (III)", "score": 3 },
-            { "id": "eye4", "label": "Espontánea (IV)", "score": 4 }
+            { "id": "eye1", "label": "0: > 400", "score": 0 },
+            { "id": "eye2", "label": "1: 301-400", "score": 1 },
+            { "id": "eye3", "label": "2: 201-300", "score": 10 },
+            { "id": "eye4", "label": "3: 101-200", "score": 10 },
+            { "id": "eye5", "label": "4: ≤ 101", "score": 10 }
           ]
         },
         {
-          "id": "ver_class",
-          "text": "Seleccione un parametro de Respuesta Verbal",
+          "id": "ren_class",
+          "text": "Sistema Renal (Creatinina sérica en mg/dL)",
           "options": [
-            { "id": "ver1", "label": " Sin respuesta verbal (I)", "score": 1 },
-            { "id": "ver1", "label": "Sonidos incomprensibles o gemidos (II)", "score": 2 },
-            { "id": "ver1", "label": "Palabras inapropiadas o incoherentes (III)", "score": 3 },
-            { "id": "ver1", "label": "Confuso o desorientado (IV)", "score": 4 },
-            { "id": "ver1", "label": "Orientado y conversando normalmente (V)", "score": 5 }
+            { "id": "ver1", "label": "0: < 1.4", "score": 0 },
+            { "id": "ver2", "label": "1: 1.4-1.8", "score": 1 },
+            { "id": "ver3", "label": "2: 1.9-3.6", "score": 10 },
+            { "id": "ver4", "label": "3: 3.6-4.9", "score": 10 },
+            { "id": "ver5", "label": "4: > 4.9", "score": 10 }
           ]
         },
         {
-          "id": "mot_class",
-          "text": "Seleccione un parametro de Respuesta motora",
+          "id": "car_class",
+          "text": "Sistema Cardiovascular (Presión Arterial Sistólica en mmHg)",
           "options": [
-            { "id": "mot1", "label": " Sin respuesta motora (I)", "score": 1 },
-            { "id": "mot2", "label": "Extensión anormal - descerebración (II)", "score": 2 },
-            { "id": "mot3", "label": "Flexión anormal - decorticación (III)", "score": 3 },
-            { "id": "mot4", "label": "Retirada o flexión normal ante el dolor (IV)", "score": 4 },
-            { "id": "mot5", "label": "Localiza el dolor - mueve la mano hacia el estímulo (V)", "score": 5 },
-            { "id": "mot6", "label": "Obedece órdenes correctamente (VI)", "score": 6 }
+            { "id": "mot1", "label": "0: > 90", "score": 0 },
+            { "id": "mot2", "label": "1: < 90 responde a volumen", "score": 1 },
+            { "id": "mot3", "label": "2: < 90 No responde a volumen ", "score": 10 },
+            { "id": "mot4", "label": "3: < 90 No responde a volumen y pH < 7.3", "score": 10 },
+            { "id": "mot5", "label": "4: < 90 No responde a volumen y pH < 7.2", "score": 10 }
           ]
         }
       ],
       "interpretation": [
-        { "min": 3, "max": 8, "label": "Lesión grave", "description": "Emergencia médica neurológica extrema con requerimiento de soporte de via aerea", "severity": "critical" },
-        { "min": 9, "max": 12, "label": "Lesión moderada", "description": "Estado intermedio que amerita estudios de imagen urgentes ej. TAC cerebral", "severity": "moderate" },
-        { "min": 13, "max": 15, "label": "Lesión leve", "description": "Paciente estable que requiere observación y evaluación continua.", "severity": "low" }
+        { "min": 0, "max": 9, "label": "Pancreatitis Aguda Leve", "description": "No presenta insuficiencia de órganos ni complicaciones locales o sistémicas.", "severity": "low" },
+        { "min": 10, "max": 100, "label": "Falla organica", "description": "Pancreatitis Moderadamente Grave: Falla organica transitoria (,48h) - Pancreatitis Grave: Falla organica persistente (>48h)", "severity": "critical" }
       ]
     }
