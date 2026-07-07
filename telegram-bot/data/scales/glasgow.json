@@ -2,7 +2,7 @@
   "id": "glasgow",
   "name": "Glasgow (ECG) ",
   "fullName": "Escala de Coma de Glasgow (ECG) ",
-  "description": "evalúa el nivel de consciencia tras un traumatismo craneoencefálico o daño neurológico.",
+  "description": "Evalúa el nivel de consciencia tras un traumatismo craneoencefálico o daño neurológico.",
   "category": "trauma",
   "duration": "<1 min",
   "questions": [
@@ -10,33 +10,33 @@
           "id": "eye_class",
           "text": "Seleccione un parametro de Apertura Ocular",
           "options": [
-            { "id": "eye1", "label": " Sin apertura ocular", "score": 1 },
-            { "id": "eye2", "label": "Ante un estímulo doloroso", "score": 2 },
-            { "id": "eye3", "label": "Ante una orden verbal", "score": 3 },
-            { "id": "eye4", "label": "Espontánea", "score": 4 }
+            { "id": "eye1", "label": " Sin apertura ocular (I)", "score": 1 },
+            { "id": "eye2", "label": "Ante un estímulo doloroso (II)", "score": 2 },
+            { "id": "eye3", "label": "Ante una orden verbal (III)", "score": 3 },
+            { "id": "eye4", "label": "Espontánea (IV)", "score": 4 }
           ]
         },
         {
           "id": "ver_class",
           "text": "Seleccione un parametro de Respuesta Verbal",
           "options": [
-            { "id": "ver1", "label": " Sin respuesta verbal", "score": 1 },
-            { "id": "ver1", "label": "Sonidos incomprensibles o gemidos", "score": 2 },
-            { "id": "ver1", "label": "Palabras inapropiadas o incoherentes", "score": 3 },
-            { "id": "ver1", "label": "Confuso o desorientado", "score": 4 },
-            { "id": "ver1", "label": "Orientado y conversando normalmente", "score": 5 }
+            { "id": "ver1", "label": " Sin respuesta verbal (I)", "score": 1 },
+            { "id": "ver1", "label": "Sonidos incomprensibles o gemidos (II)", "score": 2 },
+            { "id": "ver1", "label": "Palabras inapropiadas o incoherentes (III)", "score": 3 },
+            { "id": "ver1", "label": "Confuso o desorientado (IV)", "score": 4 },
+            { "id": "ver1", "label": "Orientado y conversando normalmente (V)", "score": 5 }
           ]
         },
         {
           "id": "mot_class",
-          "text": "Seleccione un parametro de Apertura Ocular",
+          "text": "Seleccione un parametro de Respuesta motora",
           "options": [
-            { "id": "mot1", "label": " Sin respuesta motora", "score": 1 },
-            { "id": "mot2", "label": "Extensión anormal - descerebración", "score": 2 },
-            { "id": "mot3", "label": "Flexión anormal - decorticación", "score": 3 },
-            { "id": "mot4", "label": "Retirada o flexión normal ante el dolor", "score": 4 },
-            { "id": "mot5", "label": "Localiza el dolor - mueve la mano hacia el estímulo", "score": 5 },
-            { "id": "mot6", "label": "Obedece órdenes correctamente", "score": 6 }
+            { "id": "mot1", "label": " Sin respuesta motora (I)", "score": 1 },
+            { "id": "mot2", "label": "Extensión anormal - descerebración (II)", "score": 2 },
+            { "id": "mot3", "label": "Flexión anormal - decorticación (III)", "score": 3 },
+            { "id": "mot4", "label": "Retirada o flexión normal ante el dolor (IV)", "score": 4 },
+            { "id": "mot5", "label": "Localiza el dolor - mueve la mano hacia el estímulo (V)", "score": 5 },
+            { "id": "mot6", "label": "Obedece órdenes correctamente (VI)", "score": 6 }
           ]
         }
       ],

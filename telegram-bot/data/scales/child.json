@@ -1,0 +1,61 @@
+{
+  "id": "clild",
+  "name": "Child-Pugh",
+  "fullName": "Child-Turcotte-Pugh Score",
+  "description": "Evalúa la gravedad y el pronóstico de la cirrosis hepática.",
+  "reference": "Pugh RNH, Murray-Lyon IM, Dawson JL, Pietroni MC, Williams R. Transection of the oesophagus for bleeding oesophageal varices. Br J Surg. 1973.",
+  "category": "higado",
+  "duration": "~2 min",
+  "questions": [
+        {
+          "id": "encephalopathy",
+          "text": "Grado de Encefalopatía hepática",
+          "options": [
+            { "id": "encephalopathy1", "label": " Ausente", "score": 1 },
+            { "id": "encephalopathy2", "label": "Grado I-II", "score": 2 },
+            { "id": "encephalopathy3", "label": "Grado III-IV", "score": 3 }
+          ]
+        },
+        {
+          "id": "ascites",
+          "text": "ascitis",
+          "options": [
+            { "id": "ascites1", "label": " Ausente", "score": 1 },
+            { "id": "ascites2", "label": "Leve / Controlada con diuréticos", "score": 2 },
+            { "id": "ascites3", "label": "Moderada o severa / Refractaria", "score": 3 }
+          ]
+        },
+        {
+          "id": "bilirubin",
+          "text": "Bilirrubina total (mg/dL)",
+          "options": [
+            { "id": "bilirubin1", "label": " < 2", "score": 1 },
+            { "id": "bilirubin2", "label": " 2-3", "score": 2 },
+            { "id": "bilirubin3", "label": " > 3", "score": 3 }
+          ]
+        },
+        {
+          "id": "albumin",
+          "text": "Albúmina sérica (g/dL)",
+          "options": [
+            { "id": "albumin1", "label": " > 3.5", "score": 1 },
+            { "id": "albumin2", "label": "2.8 - 3.5", "score": 2 },
+            { "id": "albumin3", "label": "< 2.8", "score": 3 }
+          ]
+        },
+        {
+          "id": "inr",
+          "text": "INR",
+          "options": [
+            { "id": "inr1", "label": " < 1.7", "score": 1 },
+            { "id": "inr2", "label": "1.7 - 2.3", "score": 2 },
+            { "id": "inr3", "label": "> 2.3", "score": 3 }
+          ]
+        }
+      ],
+      "interpretation": [
+        { "min": 5, "max": 6, "label": "Clase A", "description": "Cirrosis compensada. sobrevida 100% en un año, mortalidad en cirugia abdominal del 10% ", "severity": "low" },
+        { "min": 7, "max": 9, "label": "Clase B", "description": "Disfunción hepática moderada. sobrevida 80% en un año, mortalidad en cirugia abdominal del 30%", "severity": "moderate" },
+        { "min": 10, "max": 15, "label": "Clase C", "description": "Cirrosis descompensada. sobrevida 45% en un año, mortalidad en cirugia abdominal del 82%", "severity": "critical" }
+      ]
+    }

@@ -92,19 +92,19 @@
     {
       "min": 100,
       "max": 1000,
-      "label": "Grado III (Severa)",
+      "label": "Tokio Grado III (Severa)",
       "description": "Existe disfunción de al menos un órgano. Requiere manejo intensivo."
     },
     {
       "min": 10,
       "max": 99,
-      "label": "Grado II (Moderada)",
+      "label": "Tokio Grado II (Moderada)",
       "description": "Existe al menos un criterio de gravedad local o sistémica."
     },
     {
       "min": 0,
       "max": 9,
-      "label": "Grado I (Leve)",
+      "label": "Tokio Grado I (Leve)",
       "description": "No cumple criterios de Grado II ni Grado III."
     }
   ]
