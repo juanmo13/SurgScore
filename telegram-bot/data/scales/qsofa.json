@@ -1,7 +1,7 @@
 {
   "id": "qsofa",
   "name": "qSOFA",
-  "fullName": "Quick Sequential Organ Failure Assessment",
+  "fullName": "Quick Sequential Organ Failure Assessment (qSOFA)",
   "description": "Herramienta de tamizaje rápido para identificar pacientes con sospecha de infección y alto riesgo de mala evolución.",
   "reference": "Singer M, Deutschman CS, Seymour CW, et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA. 2016.",
   "category": "sepsis",

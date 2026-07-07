@@ -1,7 +1,7 @@
 {
   "id": "asa",
   "name": "ASA",
-  "fullName": "American Society of Anesthesiologists Physical Status",
+  "fullName": "American Society of Anesthesiologists Physical Status (ASA)",
   "description": "Clasifica el riesgo anestésico preoperatorio según el estado físico del paciente.",
   "category": "riesgo_preoperatorio",
   "duration": "<1 min",

@@ -1,7 +1,7 @@
 {
   "id": "bisap",
   "name": "BISAP",
-  "fullName": "Bedside Index for Severity in Acute Pancreatitis",
+  "fullName": "Bedside Index for Severity in Acute Pancreatitis (BISAP)",
   "description": "Predice el riesgo de mortalidad y gravedad en pancreatitis aguda durante las primeras 24 horas.",
   "reference": "Wu BU, Johannes RS, Sun X, Tabak Y, Conwell DL, Banks PA. The early prediction of mortality in acute pancreatitis: a large population-based study. Gut. 2008.",
   "category": "pancreas",

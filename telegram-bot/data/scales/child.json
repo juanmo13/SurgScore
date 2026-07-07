@@ -18,7 +18,7 @@
         },
         {
           "id": "ascites",
-          "text": "ascitis",
+          "text": "Grado de ascitis",
           "options": [
             { "id": "ascites1", "label": " Ausente", "score": 1 },
             { "id": "ascites2", "label": "Leve / Controlada con diuréticos", "score": 2 },

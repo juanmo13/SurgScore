@@ -1,7 +1,7 @@
 {
   "id": "aas",
   "name": "AAS",
-  "fullName": "Adult Appendicitis Score",
+  "fullName": "Adult Appendicitis Score (AAS)",
   "description": "Estima la probabilidad de apendicitis aguda en pacientes adultos.",
   "reference": "Sammalkorpi HE, Mentula P, Leppäniemi A. Adult Appendicitis Score. Br J Surg. 2014.",
   "category": "apendicitis",

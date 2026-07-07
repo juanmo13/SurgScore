@@ -1,8 +1,8 @@
 {
   "id": "pals",
   "name": "PALabS",
-  "fullName": "Pediatric Appendicitis Lab Score",
-  "description": "escala clínica y analítica diseñada para identificar a niños con muy bajo riesgo de apendicitis aguda",
+  "fullName": "Pediatric Appendicitis Lab Score (PALabS)",
+  "description": "escala pediatrica diseñada para identificar a niños con muy bajo riesgo de apendicitis aguda",
   "category": "cirugia_pediatrica",
   "duration": "~2 min",
   "questions": [

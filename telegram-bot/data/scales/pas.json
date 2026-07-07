@@ -1,8 +1,8 @@
 {
   "id": "pas",
   "name": "PAS",
-  "fullName": "Pediatric Appendicitis Score",
-  "description": "conocida como escala de Samuel, evalua el riesgo de apendicitis aguda en niños (4-15 años) que presentan dolor abdominal",
+  "fullName": "Pediatric Appendicitis Score (PAS)",
+  "description": "conocida como escala pediatrica de Samuel, evalua el riesgo de apendicitis aguda en niños (4-15 años) que presentan dolor abdominal",
   "category": "cirugia_pediatrica",
   "duration": "~2 min",
   "questions": [
