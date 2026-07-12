@@ -1,0 +1,74 @@
+{
+  "id": "zargar",
+  "name": "zargar",
+  "fullName": "clasificación de Zargar modificada.",
+  "description": "sistema endoscópico para evaluar la gravedad de las lesiones en el esófago y estómago tras la ingestión de sustancias cáusticas o corrosivas.",
+  "category": "endoscopia",
+  "duration": "<1 min",
+  "questions": [
+    {
+      "id": "hinchey_stage",
+      "text": "Seleccione el estadio de Hinchey",
+      "options": [
+        { "id": "o", "label": "Mucosa normal sin alteraciones.", "score": 0 },
+        { "id": "i", "label": "Edema e hiperemia (enrojecimiento) de la mucosa.", "score": 1 },
+        { "id": "iia", "label": "Exudados, erosiones y úlceras superficiales; hemorragias.", "score": 2 },
+        { "id": "iib", "label": "Úlceras profundas localizadas o úlceras circunferenciales.", "score": 3 },
+        { "id": "iiia", "label": "Áreas aisladas de necrosis focal (poco extensas).", "score": 4 },
+        { "id": "iiib", "label": "Necrosis extensa y confluente de la mucosa.", "score": 5 },
+        { "id": "iv", "label": "Perforación evidente del órgano.", "score": 6 }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 0,
+      "max": 0,
+      "label": "Grado 0",
+      "description": "lesiones leves - Riesgo de Estenosis 0% (Ninguno). Curación completa.",
+      "severity": "low"
+    },
+    {
+      "min": 1,
+      "max": 1,
+      "label": "Grado 1",
+      "description": "lesiones leves - Riesgo de Estenosis 0% (Ninguno). Curación completa.",
+      "severity": "low"
+    },
+    {
+      "min": 2,
+      "max": 2,
+      "label": "Grado 2A",
+      "description": "lesiones leves - Riesgo de Estenosis 0% (Bajo o nulo).",
+      "severity": "low"
+    },
+    {
+      "min": 3,
+      "max": 3,
+      "label": "Grado 2B",
+      "description": "lesiones moderada - Riesgo de Estenosis 50% - 70% (Riesgo alto de estenosis).",
+      "severity": "moderate"
+    },
+    {
+      "min": 4,
+      "max": 4,
+      "label": "Grado 3A",
+      "description": "lesiones grave - Riesgo de Estenosis 70% (Riesgo muy alto).",
+      "severity": "high"
+    },
+    {
+      "min": 5,
+      "max": 5,
+      "label": "Grado 3B",
+      "description": "lesiones grave - Riesgo de Estenosis 100% (Estenosis casi segura).",
+      "severity": "high"
+    },
+    {
+      "min": 6,
+      "max": 6,
+      "label": "Grado 4",
+      "description": "lesiones grave - Requiere cirugía de emergencia inmediata.",
+      "severity": "critical"
+    }
+  ]
+}
