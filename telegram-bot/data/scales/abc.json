@@ -1,0 +1,46 @@
+{
+  "id": "abc",
+  "name": "ABC SCORE ",
+  "fullName": "ABC SCORE TRANSFUSION MASIVA ",
+  "description": "Empleado en trauma para predecir la necesidad de transfusión masiva.",
+  "category": "trauma",
+  "duration": "<1 min",
+  "questions": [
+        {
+          "id": "trauma",
+          "text": "Mecanismo de trauma",
+          "options": [
+            { "id": "eye1", "label": "Trauma penetrante en el torso:", "score": 1 },
+            { "id": "eye4", "label": "Otro mecanismo de trauma", "score": 0 }
+          ]
+        },
+        {
+          "id": "pa",
+          "text": "Presión Arterial Sistólica ",
+          "options": [
+            { "id": "ver1", "label": "(PAS) < 90 mmHg", "score": 1 },
+            { "id": "ver5", "label": "(PAS) > 90 mmHg", "score": 0 }
+          ]
+        },
+        {
+          "id": "pc",
+          "text": "Frecuencia Cardíaca ",
+          "options": [
+            { "id": "ver1", "label": "(FC) > 120 lpm", "score": 1 },
+            { "id": "ver5", "label": "(FC) < 120 lpm", "score": 0 }
+          ]
+        },
+        {
+          "id": "eco",
+          "text": "Ecografía FAST",
+          "options": [
+            { "id": "mot1", "label": "FAST positivo", "score": 1 },
+            { "id": "mot6", "label": "FAST negativo", "score": 0 }
+          ]
+        }
+      ],
+      "interpretation": [
+        { "min": 0, "max": 1, "label": "ABC Negativo", "description": "Poco probable que el paciente requiera una transfusión masiva", "severity": "low" },
+        { "min": 2, "max": 4, "label": "ABC Positivo", "description": "Alta probabilidad de requerir una transfusión masiva en las primeras 24h S75% E86%", "severity": "critical" }
+      ]
+    }

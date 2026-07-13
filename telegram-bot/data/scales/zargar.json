@@ -7,15 +7,15 @@
   "duration": "<1 min",
   "questions": [
     {
-      "id": "hinchey_stage",
-      "text": "Seleccione el estadio de Hinchey",
+      "id": "zargar_stage",
+      "text": "Seleccione el hallazgo endoscopico:",
       "options": [
         { "id": "o", "label": "Mucosa normal sin alteraciones.", "score": 0 },
-        { "id": "i", "label": "Edema e hiperemia (enrojecimiento) de la mucosa.", "score": 1 },
+        { "id": "i", "label": "Edema e hiperemia de la mucosa.", "score": 1 },
         { "id": "iia", "label": "Exudados, erosiones y úlceras superficiales; hemorragias.", "score": 2 },
-        { "id": "iib", "label": "Úlceras profundas localizadas o úlceras circunferenciales.", "score": 3 },
-        { "id": "iiia", "label": "Áreas aisladas de necrosis focal (poco extensas).", "score": 4 },
-        { "id": "iiib", "label": "Necrosis extensa y confluente de la mucosa.", "score": 5 },
+        { "id": "iib", "label": "Úlceras profundas localizadas o circunferenciales.", "score": 3 },
+        { "id": "iiia", "label": "Necrosis focal aislada.", "score": 4 },
+        { "id": "iiib", "label": "Necrosis extensa.", "score": 5 },
         { "id": "iv", "label": "Perforación evidente del órgano.", "score": 6 }
       ]
     }
